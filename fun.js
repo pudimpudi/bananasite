@@ -23,7 +23,7 @@ if (img_banana && spanContador && titulo) {
             img_banana.alt = "Imagem da Miku";
             titulo.textContent = "VOCÊ ENCONTROU A MIKU ANIVERSÁRIO DE 15 ANOS!!!!"; // Muda o texto
         } else if (cont > numero) {
-            img_banana.src = "banana.png.png"; // Volta para a banana
+            img_banana.src = "banana.png"; // Volta para a banana
             img_banana.alt = "Imagem da Banana";
             titulo.innerHTML = `VOCÊ CLICOU NA BANANA <span id="cont">${cont}</span> VEZES`; // Volta para o texto original
         }
