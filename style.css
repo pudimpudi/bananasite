@@ -15,8 +15,21 @@ body {
 }
 h1{
     font-size: 2em;
+    color: #ecb56c;
 }
 hr{
-    border: 1px solid #181716;
+    border: 1px solid #ecb56c;
     margin: 20px 0;
+}
+p{
+    color: #000000;
+}
+@keyframes pular {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.imagem img:active {
+    animation: pular 0.3s;
 }
