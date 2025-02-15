@@ -3,33 +3,72 @@
     font-weight: 400;
     font-style: normal;
   }
-body {
+  body {
     font-family: "Darumadrop One", serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     background-color: bisque;
+    margin: 0;
+    padding: 0;
 }
-.container{
+
+.container {
     text-align: center;
 }
-h1{
-    font-size: 2em;
-    color: #ecb56c;
+
+h1 {
+    font-size: 2.5em;
+    color: #d4883f; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: color 0.3s ease-in-out;
 }
-hr{
+
+h1:hover {
+    color: #b56729; 
+}
+
+hr {
     border: 1px solid #ecb56c;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 80%; 
 }
-p{
-    color: #000000;
+
+p {
+    color: #333; 
+    font-size: 1.2em;
 }
+
+
 @keyframes pular {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
 
+.imagem img {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.imagem img:hover {
+    transform: scale(1.1);
+}
+
 .imagem img:active {
-    animation: pular 0.3s;
+    animation: pular 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    .imagem img {
+        width: 80%; 
+    }
 }
